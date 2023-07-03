@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Bradwill Van Niekerk</title>
+    <link href="Stylesheet/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 strong>Registration Form</h1>
+    <form action="https://formsubmit.co/bradwill.oostendorp7@gmail.com" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" minlength="5" maxlength="12" required><br>
+        <label for="password"> Password:</label>
+        <input type="text" name="password" minlength="7" maxlength="12" required><br>
+        <label for="name">Full name:</label>
+        <input type="text" name="name" required><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" required><br>
+        <form action="#">
+            <label for="country">Country:</label>
+            <select name="country" id="country" required>
+                <option value="America">America</option>
+                <option value="Russia">Russia</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="England">England</option>
+                <option value="Egypt">Egypt</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Brazil">Brazil</option>
+            </select><br>
+            <label for="zip-code">Zip Code:</label>
+            <input type="number" name="zip-code" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required><br>
+            <label>Sex:</label>
+            <input type="radio" class="sex" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" class="sex" value="female" required>
+            <label for="female">female</label><br>
+            <label>Language:</label>
+            <input type="checkbox" id="english" value="english" required>
+            <lable for="english">English</lable>
+            <input type="checkbox" id="non-english" value="non-english" required>
+            <label for="non-english">Non-English</label><br>
+            <label for="about">About:</label>
+            <input type="text" name="about" optional><br>
+            <button type="submit">Send</button>
+        </form>
+</body>
+
+</html>

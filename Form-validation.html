@@ -8,7 +8,7 @@
 
 <body>
     <h1 strong>Registration Form</h1>
-    <form action="https://formsubmit.co/bradwill.oostendorp7@gmail.com" method="POST">
+    <form action="https://formsubmit.co/bradwill.oostendorp7@gmail.com" name="myform" method="POST">
         <label for="username">Username:</label>
         <input type="text" name="username" minlength="5" maxlength="12" required><br>
         <label for="password"> Password:</label>
@@ -34,19 +34,20 @@
             <label for="email">Email:</label>
             <input type="email" name="email" required><br>
             <label>Sex:</label>
-            <input type="radio" class="sex" value="male" required>
+            <input type="radio" name="sex" value="male" required>
             <label for="male">Male</label>
-            <input type="radio" class="sex" value="female" required>
+            <input type="radio" name="sex" value="female" required>
             <label for="female">female</label><br>
             <label>Language:</label>
-            <input type="checkbox" id="english" value="english" required>
+            <input type="checkbox" id="english"  name="Language" value="english" required>
             <lable for="english">English</lable>
-            <input type="checkbox" id="non-english" value="non-english" required>
+            <input type="checkbox" id="non-english"  name="Language" value="non-english" required>
             <label for="non-english">Non-English</label><br>
             <label for="about">About:</label>
-            <input type="text" name="about" optional><br>
-            <button type="submit">Send</button>
+            <textarea type="text" name="about" cols="30" rows="5"><br>
+            <button type="submit" value="submit">Send</button>
         </form>
+        </script>
 </body>
 
 </html>
